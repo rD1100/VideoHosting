@@ -1,0 +1,877 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat',sans-serif ;
+    overflow: visible;
+    background-color: gray;
+    /* height: 100%; */
+}
+
+/* Navbar header */
+nav{
+  position: sticky;
+  position: -webkit-sticky;
+    display: flex;
+    list-style: none;
+    background-color:black;
+    color: rgb(236, 239, 241);
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+    font-size: 20px;
+}
+nav  a:hover {
+  color: rgb(197, 192, 192);
+}
+ul{
+    text-decoration: none;
+}
+.kontent{
+    display: flex;
+    justify-content: space-around;
+   
+    list-style: none;
+    width: 25%;
+    /* border: solid blue; */
+}
+
+.akunNav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 15%;
+    margin-left: 80px;
+    /* padding-right: 50px; */
+    /* border: solid red; */
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.brand{
+    letter-spacing: 1px;
+    /* border: solid red; */
+   margin-left: -50px;
+
+}
+
+.inputSearch{
+    /* border: solid red; */
+    position: relative;
+}
+
+ #searchIcon{
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    /* color: black; */
+
+}
+
+.inputSearch form{
+    background-color: grey;
+    border-radius: 25px;
+    position: relative;
+}
+.search{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 6px 40px 6px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px black;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.btnSearch{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+button:hover{
+    color: rgb(162, 163, 163);
+}
+
+.ContainerLogout{
+  border-top: 1px solid black;
+}
+/* end navbar */
+
+.contentPage{
+    /* margin: 30%; */
+    /* position: relative; */
+    /* top: 50%; */
+    margin: 20px 1px 20px 1px;
+    padding: 5px 0  5px 0 ;
+    /* border: 0.5px solid blue; */
+}
+
+/* Footer page */
+
+footer {
+  /* position:fixed; */
+  bottom: 0;
+  padding: 10px 10px 0px 10px;
+  /* left: 0;
+  right: 0; */
+  display: flex;
+  background-color: black;
+  /* margin-top: 110px; */
+    width: 100%;
+    align-items: center;
+    height: 80px;
+  }
+
+  footer span{
+    color:  white;
+  } 
+
+  .FooterMenu{
+    /* border: solid blue; */
+    color:white;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+/* End Footer */
+/* main */
+  main{
+    margin-bottom: 50px;
+  }
+/* end main */
+
+  .rowContent{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: solid red; */
+    margin: 0 20px 0 20px ;
+  }
+  .ContainerKontent{
+    margin-top: 20px;
+  }
+
+  .kontenView{
+    border: red solid 0.5px;
+    height: 115px;
+    /* width: 20px; */
+    padding: 26px 25px 26px 15px;
+    /* justify-content: space-evenly; */
+    margin: 0px 5px 0px 10px;
+    border-radius: 10px;
+    background-color: black;
+    
+    /* background-color: aqua; */
+  }
+
+  .columnKonten{
+    display: flex;
+  }
+
+  .iconPosition i{
+    /* border: 1px solid brown; */
+    /* position: relative; */
+    top: 5px;
+    font-size: 35px;
+    color: blueviolet;
+   
+  }
+
+  .kontenHeading{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  .zero{
+    font-size: x-large;
+  }
+
+  .graphTitle{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .TopBorder{
+    /* border: solid red; */
+    margin-left: 30px;
+    /* width: 380px; */
+  }
+  .viewBorder{
+    border: solid black;
+    border-radius: 5px;
+    background-color: black;
+    width: 450px;
+    padding-bottom: 70px;
+    text-align: center;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .viewKontent{
+    position: relative;
+    top: 35px;
+    color: white;
+    font-size: larger;
+   
+
+  }
+
+
+
+  .iconUser a i{
+   padding: 40px;
+    color: red;
+    border: solid blue 0.5px ;
+  }
+  .titleUserNav{
+    display: inline;
+    font-size: smaller;
+    margin-left: 15px;
+    /* margin-left: -50px; */
+  }
+  .titleUserNav i{
+    margin-left: 10px;
+  }
+  .ContainerGraph{
+    border: solid black;
+     border-radius: 10px;
+     margin-top:6px;
+     width: 800px;
+     padding: 15px 10px 0px 20px;
+     background-color: black;
+  }
+  .GraphDashboard{
+    height: 350px;
+    width:700px;
+    padding-top: 30px;
+    /* padding-left: 30px; */
+    /* padding-right: 40px; */
+    padding-bottom: 40px;
+    /* color: black; */
+    background-color: black;
+  }
+   
+
+  /* Videos page */
+.ContainerInsideKontent{
+  border: solid rgb(11, 1, 1);
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+  .ContainerVideoPost{
+    display: flex;
+    /* justify-content: space-evenly; */
+
+  }
+  .ContainerVideoUploadTools{
+    /* position: relative; */
+    display: flex;
+    /* border: solid yellow; */
+    /* width: 20px; */
+  }
+
+  .ContainerCreateFolderButton{
+    
+
+    /* border: solid green; */
+  }
+
+  .ContainerVideoModify{
+    display: flex;
+
+    /* border: solid rgb(0, 255, 110); */
+    margin-left: 350px;
+    
+    /* width: 30px; */
+  }
+
+
+  .btnVideoModifyButton{
+    margin: 0 8px 0 0;
+    padding: 10px 10px 10px 10px ;
+    display: flex;
+    justify-content: space-around;
+    width: 105px; 
+    font-size: 16px;
+    align-items: center;
+    background-color: rgb(100, 6, 231);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    
+  }
+  
+  .btnVideoModifyButton1{
+    margin: 0 8px 0 0;
+    padding: 10px 10px 10px 10px ;
+    display: flex;
+    justify-content: space-around;
+    width: 105px; 
+    font-size: 16px;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    
+  }
+
+  .ContainerUploadButton{
+    margin-right: 8px;
+    
+  }
+.labelUpload{
+  display: flex;
+  width: 115px;
+  background-color: rgb(100, 6, 231);
+    font-size:20px;
+    padding: 12px 13px 12px 13px;
+    justify-content: space-between;
+    /* border: 0.5px solid red; */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .TableVideoContent{
+    /* border: solid purple; */
+    margin-top: 25px;
+
+  }
+
+ .TableVideoContent table, th, td {
+    text-align: left;
+    /* border: 1px solid rgb(26, 10, 249); */
+    font-family:'Montserrat',sans-serif ;
+    /* width: 100%; */
+    height: max-content;
+  }
+  .TableVideoContent table{
+    width: 100%;
+  }
+
+  th{
+   font-size: 20px;
+  }
+
+  /* tr td{
+    border: solid blu;
+  } */
+  /* td,.CheckboxVideo{
+    text-align: center;
+  } */
+  .CheckboxVideo{
+    /* width: 25px; */
+    padding-right: 20p;
+    text-align: center;
+    background-color: gray;
+    border: solid red;
+  }
+
+  .ContainerVideoPagination{
+   margin-top: 45px;
+  }
+  .VideoPagination{
+    
+    display: flex;
+    font-size: large;
+
+  }
+
+  .GraphReport{
+    height: 400px;
+    /* padding-bottom: 40px; */
+    /* width:793px; */
+    /* padding-bottom: 250px; */
+    color: white;
+    background-color: rgb(7, 5, 5);
+  }
+
+  .ContainerGraphReport{
+    margin-top: 45px;
+    border: solid black;
+    
+    /* height: 400px; */
+    /* margin-bottom: 200px; */
+  }
+
+  .ContainerTableReports{
+    /* border: solid green; */
+    margin-top:70px;
+  }
+
+/* TableReports */
+.TableReports{
+  width: 100%;
+  border-collapse:collapse ;
+  /* border-radius: 10px; */
+  /* border: blue solid ; */
+  font-family: 'Roboto', sans-serif;
+  
+}
+.TableReports thead tr{
+  /* background-color: blue; */
+  border-bottom: 1px solid whitesmoke;
+
+}
+.TableReports th,.TableReports td{
+  padding: 10px 12px;
+}
+.TableReports tbody tr{
+  border-bottom:1px solid white;
+}
+.TableReports tbody tr:nth-of-type(even){
+  /* background-color:grey; */
+}
+.TableReports tbody tr:hover{
+  background-color: blueviolet;
+}
+
+.TitleTableReports{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+.formGraphReport{
+  font-size: 23px;
+  /* border: solid green; */
+  align-items: center;
+  width: 54%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnGraphReports{
+  display: flex;
+  border:none;
+  border-radius: 5px;
+  background-color: rgb(100, 6, 231);
+  color: white;
+  align-items: center;
+  /* text-align: left; */
+  justify-content: space-between;
+  width: 180px;
+  padding: 10px 15px 10px 15px;
+
+}
+.titleBtnBtnGraphReports{
+  font-size: 20px;
+}
+
+.ContainerBtnGraphReports{
+  margin-left: 15px;
+}
+
+.ContainerDateReports{
+
+  /* border: solid blue; */
+  justify-content: center;
+  display: flex;
+
+}
+
+.ContainerIconbtnGraphReports{
+  font-size: 18px;
+}
+.InputDateReports{
+  width: 180px;
+  /* border: solid blue; */
+  background-color: grey;
+  border-radius: 5px;
+  position: relative;
+}
+.ContainerIconInputDateReports {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  /* width: 20px; */
+  height: 100%;
+  /* cursor: pointer; */
+  /* border: none; */
+  /* font-size: 27px; */
+  /* background: "none"; */
+  color: black;
+
+}
+.InputDateReports input{
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 9px 25px 10px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+
+/* .ContainerInputDateReports{
+  position: relative;
+} */
+.btnAddFolderVideos{
+  justify-content: space-between;
+  padding: 13px 10px 13px 10px;
+  width: 130px;
+  font-size: 18px;
+  background-color: rgb(100, 6, 231);
+  background-color: none;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+
+}
+
+/* table checkbox */
+
+.ContainerInputCheckbox{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 14px;
+  margin-right: -15px;
+  /* padding-right: -1px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.checkBoxTable{
+  position:absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.checkMark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: gray;
+  border-radius: 5px;
+  /* border: solid black; */
+}
+
+/* .ContainerInputCheckbox:hover .checkBoxTable ~.checkMark{
+  background-color: #ccc;
+
+} */
+
+.checkBoxTable:checked ~ .checkMark{
+  background-color: rgb(100, 6, 231);
+  /* display: block; */
+}
+
+.checkMark::after{
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 5.4px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkBoxTable:checked ~ .checkMark::after{
+
+  display: block;
+}
+
+/* .ContainerInputCheckbox .checkMark::after{
+  left: 8px;
+  top: 5px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+
+.chexBoxTableLine{
+  /* border: solid green 0.5px; */
+  width:1%;
+  /* display: flex; */
+  align-items: center;
+  /* padding: 10px; */
+
+}
+.numberPage{
+  margin-left: 88%;
+  border: solid rgb(100, 6, 231);
+  border-radius: 5px;
+  padding: 8px 10px 8px 10px;
+  background-color: rgb(100, 6, 231);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.paginationContainer{
+  padding: 15px 12px 15px 10px;
+  border: solid  rgb(100, 6, 231);
+  background-color:rgb(100, 6, 231);
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  height: 40px;
+  align-items: center
+  ;margin-bottom:15px;
+  border-radius: 5px;
+}
+
+.dataPagination{
+  font-size:19px;
+}
+
+/* Nav user menu dropdown */
+
+.dropDownMenu{
+  display: none;
+  list-style: none;
+  border-radius: 5px;
+  position:absolute;
+  top:60px;
+  color: grey;
+  width:160px;
+  background: white;
+  border: solid white;
+  width: 178px;
+  z-index: 1;
+}
+
+.dropDownMenu li a{
+    /* display: block; */
+    color: rgb(78, 74, 74);
+    display: flex;
+    justify-content: space-around;
+    /* border-bottom: 1px solid #555; */
+    padding: 10px 55px 5px 15px;
+}
+
+.dropDownMenu li a:hover{
+    /* border-bottom: 1px solid #646464;  */
+    background: rgb(231, 225, 240);
+}
+.dropDownMenuContent{
+  border: 0.5px solid red;
+  width: 50%;
+}
+
+
+
+/* end  Nav user menu dropdown*/
+
+/* dropdown notification */
+.dropDownMenuNotif{
+  display: none;
+  padding: 0;
+  right: 180px;
+  position: absolute;
+  list-style: none;
+  border-radius: 5px;
+  position:absolute;
+  top:60px;
+  width:360px;
+  /* background: blue; */
+  /* border: solid blue; */
+  z-index: 1;
+  height: 85px;
+}
+
+.NotificationTitle{
+  border: solid rgb(100, 6, 231);
+  border-radius: 5px;
+  background: rgb(100, 6, 231);
+  padding: 5px 10px 10px 20px;
+  border-bottom: 1px solid black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ContainerContentNotif{
+  background: white;
+  color: black;
+
+}
+
+.ContentNotif{
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 15px;
+}
+
+.IconNotifContent{
+  font-size: 26px;
+}
+
+.DescNotif{
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 5px;
+  display: flex;
+  font-size: 16px; 
+   flex-wrap: wrap;
+}
+
+.ContentNotif:hover{
+  background-color: rgb(231, 224, 238);
+}
+
+.ContainerNotifIcon{
+  cursor: pointer;
+}
+
+.ContainerNotifIcon:hover{
+  color: rgb(197, 192, 192);
+}
+
+/* end */
+
+/* Profile page */
+.ProfileContainer{
+  display: flex;
+  padding: 15px;
+}
+
+.ContainerProfileImage{
+  border-radius: 10px;
+  background: white;
+  height: 365px;
+  width: 500px;
+}
+
+.ContainerImage{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.ImageProfile{
+  border: solid rgb(100, 6, 231);
+  border-radius: 100px;
+}
+
+.ContainerProfileImgDesc{
+  text-align: center;
+}
+
+.TitleProfileImg{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.SubTitleProfileImg{
+  font-size: 18px;
+  color: grey;
+  margin-top: 5px;
+}
+
+.AdrressProfileImg{
+  font-size: 15px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.ContainerUserFollower{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.AmounntDesc{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Desc{
+  font-weight: 500;
+}
+
+.ContainerProfileDesc{
+  background: white;
+  width: 100%;
+  margin-left: 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.ContainerFillProfile{
+  border-bottom: 1px solid black;
+}
+
+.ContainerFillProfileDesc{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding:20px 0 20px 0;
+}
+
+.LabelProfileUser{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin-right: 100px;
+  flex: 0 0 100px;
+}
+
+.ContentProfilUser{
+  font-size: 18px;
+  color: grey;
+  flex: 1 1 auto;
+}
+
+.ButtonEditUserProfile{
+  cursor: pointer;
+  background: rgb(100, 6, 231);
+  color: white;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 10px 12px 10px 12px;
+  width: 90px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(100, 6, 231);
+}
+
+/* end */
